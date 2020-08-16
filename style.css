@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  html {
+    font-size: 24px;
+    font-family: 'Unica One', cursive;
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0;
+  }
+  
+  #app h1 {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 8px;
+  }
+
+ 
+body {
+    background: lightslategray;
+    padding: 10px;
+    border: 3px solid black;
+    
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 5px solid black;
+    padding: 5px;
+    max-width: 700px;
+    margin: auto;
+    height: 500px;
+    background: rgb(128, 41, 228);
+    box-shadow: 5px solid rgb(81, 32, 173);
+    
+
+    
+}
+
+.display {
+    background: cornsilk;
+    width: 100%;
+    font-size: 50px;
+    height: 200px;
+
+}
+
+button {
+    color: deepskyblue;
+    font-size: 18px;
+    border: 2px solid black;
+    font-size: 30px;
+    padding: 9px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.digits {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    
+    background: darkslategrey;
+    border: 1px solid black;
+    
+}
+
+
+.clear-all {
+    grid-template-rows: repeat(1 fr);
+    grid-row: span 3;
+}
+
+h1 {
+    border-bottom: 2px solid lightgrey;
+}
+
+.held-value {
+    border-bottom:2px solid lightslategray;
+}
+
+.operations {
+    display: flex;
+    justify-content: space-evenly;
+}
